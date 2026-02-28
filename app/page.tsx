@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback, useEffect, useRef } from 'react'
 import { Button } from '@/components/ui/button'
 import { Switch } from '@/components/ui/switch'
 import { Badge } from '@/components/ui/badge'
@@ -11,10 +11,19 @@ import DocumentSection from './sections/DocumentSection'
 
 export default function Page() {
   const [activeSection, setActiveSection] = useState<'chat' | 'docs'>('chat')
-  const [sessionId, setSessionId] = useState(() => `session-${Date.now()}`)
+  const [sessionId, setSessionId] = useState('initial')
   const [activeAgentId, setActiveAgentId] = useState<string | null>(null)
   const [showSample, setShowSample] = useState(false)
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const initialized = useRef(false)
+
+  // Set session ID on client only to avoid hydration mismatch
+  useEffect(() => {
+    if (!initialized.current) {
+      initialized.current = true
+      setSessionId(`session-${Date.now()}`)
+    }
+  }, [])
 
   const handleNewChat = useCallback(() => {
     setSessionId(`session-${Date.now()}`)
