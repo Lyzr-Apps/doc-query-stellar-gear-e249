@@ -165,24 +165,17 @@ export default function Page() {
           )}
         </header>
 
-        {/* Both sections always rendered, CSS toggles visibility */}
-        <div className="flex-1 min-h-0 relative">
-          <div
-            style={{ display: activeSection === 'chat' ? 'block' : 'none' }}
-            className="absolute inset-0"
-          >
+        {/* Section content */}
+        <div className="flex-1 min-h-0">
+          {activeSection === 'chat' ? (
             <ChatSection
               sessionId={sessionId}
               onSetActiveAgent={setActiveAgentId}
               showSample={showSample}
             />
-          </div>
-          <div
-            style={{ display: activeSection === 'docs' ? 'block' : 'none' }}
-            className="absolute inset-0"
-          >
+          ) : (
             <DocumentSection showSample={showSample} />
-          </div>
+          )}
         </div>
       </div>
     </div>
