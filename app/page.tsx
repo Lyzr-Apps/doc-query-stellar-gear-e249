@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils'
 import { FiMessageSquare, FiPlus, FiMenu, FiX, FiFolder, FiBookOpen } from 'react-icons/fi'
 import ChatSection from './sections/ChatSection'
 import DocumentSection from './sections/DocumentSection'
+import LandingPage from './landing/LandingPage'
 
 export default function Page() {
   const [activeSection, setActiveSection] = useState<'chat' | 'docs'>('chat')
@@ -15,6 +16,7 @@ export default function Page() {
   const [activeAgentId, setActiveAgentId] = useState<string | null>(null)
   const [showSample, setShowSample] = useState(false)
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [showLanding, setShowLanding] = useState(true)
   const initialized = useRef(false)
 
   // Set session ID on client only to avoid hydration mismatch
@@ -30,6 +32,21 @@ export default function Page() {
     setActiveSection('chat')
     setSidebarOpen(false)
   }, [])
+
+  if (showLanding) {
+    return (
+      <LandingPage
+        onEnterApp={() => {
+          setShowLanding(false)
+          setActiveSection('chat')
+        }}
+        onGoToDocs={() => {
+          setShowLanding(false)
+          setActiveSection('docs')
+        }}
+      />
+    )
+  }
 
   return (
     <div
