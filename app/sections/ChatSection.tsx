@@ -5,7 +5,6 @@ import { callAIAgent } from '@/lib/aiAgent'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
-import { Skeleton } from '@/components/ui/skeleton'
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from '@/components/ui/collapsible'
 import { cn } from '@/lib/utils'
 import { FiSend, FiChevronDown, FiChevronRight, FiAlertTriangle, FiBookOpen } from 'react-icons/fi'
@@ -312,14 +311,24 @@ export default function ChatSection({ sessionId, onSetActiveAgent, showSample }:
               </div>
             ))}
 
-            {/* Loading skeleton */}
+            {/* Loading indicator */}
             {loading && (
               <div className="flex justify-start">
-                <div className="max-w-[75%]">
-                  <div className="px-4 py-3 rounded-2xl rounded-bl-md bg-card border border-border/60 shadow-sm space-y-2">
-                    <Skeleton className="h-4 w-full" />
-                    <Skeleton className="h-4 w-4/5" />
-                    <Skeleton className="h-4 w-3/5" />
+                <div className="max-w-[85%] md:max-w-[75%]">
+                  <div className="px-4 py-4 rounded-2xl rounded-bl-md bg-card border border-border/60 shadow-sm">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="flex items-center gap-1">
+                        <span className="h-2 w-2 rounded-full bg-primary animate-bounce" style={{ animationDelay: '0ms', animationDuration: '1.2s' }} />
+                        <span className="h-2 w-2 rounded-full bg-primary animate-bounce" style={{ animationDelay: '200ms', animationDuration: '1.2s' }} />
+                        <span className="h-2 w-2 rounded-full bg-primary animate-bounce" style={{ animationDelay: '400ms', animationDuration: '1.2s' }} />
+                      </div>
+                      <span className="text-xs font-medium text-muted-foreground">Searching knowledge base...</span>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="h-3 rounded-full bg-muted animate-pulse w-full" />
+                      <div className="h-3 rounded-full bg-muted animate-pulse w-4/5" />
+                      <div className="h-3 rounded-full bg-muted animate-pulse w-3/5" />
+                    </div>
                   </div>
                 </div>
               </div>
