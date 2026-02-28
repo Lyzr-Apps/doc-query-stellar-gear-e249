@@ -115,6 +115,13 @@ function normalizeResponse(parsed: any): NormalizedAgentResponse {
 }
 
 /**
+ * GET /api/agent — health check / prefetch
+ */
+export async function GET() {
+  return NextResponse.json({ status: 'ok', timestamp: new Date().toISOString() })
+}
+
+/**
  * POST /api/agent
  *
  * Two modes, both POST:

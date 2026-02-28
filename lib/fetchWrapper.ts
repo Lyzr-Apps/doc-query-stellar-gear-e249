@@ -111,13 +111,11 @@ const fetchWrapper = async (...args) => {
 
     return response;
   } catch (error) {
-    // network failures
+    // network failures — log but don't report to parent as fatal error
+    // callers like callAIAgent handle undefined returns gracefully
     const requestUrl = typeof args[0] === "string" ? args[0] : args[0]?.url || "";
-    sendErrorToParent(
-      `Network error: Cannot connect to backend (${requestUrl})`,
-      undefined,
-      requestUrl,
-    );
+    console.warn(`[FetchWrapper] Network error for ${requestUrl}:`, error);
+    return undefined;
   }
 };
 
