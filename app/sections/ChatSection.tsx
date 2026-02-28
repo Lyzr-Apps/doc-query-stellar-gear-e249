@@ -2,8 +2,6 @@
 
 import React, { useState, useRef, useEffect, useCallback } from 'react'
 import { callAIAgent } from '@/lib/aiAgent'
-import { Button } from '@/components/ui/button'
-import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from '@/components/ui/collapsible'
 import { cn } from '@/lib/utils'
@@ -339,25 +337,31 @@ export default function ChatSection({ sessionId, onSetActiveAgent, showSample }:
 
       {/* Input Bar */}
       <div className="border-t border-border/50 bg-background/80 backdrop-blur-[16px] px-4 md:px-8 py-4">
-        <div className="max-w-3xl mx-auto flex gap-3 items-end">
-          <Textarea
+        <form
+          className="max-w-3xl mx-auto flex gap-3 items-end"
+          onSubmit={e => { e.preventDefault(); handleSubmit() }}
+        >
+          <textarea
             ref={textareaRef}
             value={inputValue}
             onChange={e => setInputValue(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Ask a question about company knowledge..."
             rows={1}
-            className="resize-none min-h-[44px] max-h-[140px] rounded-xl border-border/60 bg-card/80 backdrop-blur-sm focus-visible:ring-primary/30 text-sm"
+            className="flex-1 resize-none min-h-[44px] max-h-[140px] rounded-xl border border-border/60 bg-card/80 backdrop-blur-sm text-sm px-3 py-2.5 outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/40 transition-colors placeholder:text-muted-foreground"
           />
-          <Button
-            onClick={handleSubmit}
-            disabled={!inputValue.trim() || loading}
-            size="icon"
-            className="h-11 w-11 rounded-xl shrink-0"
+          <button
+            type="submit"
+            className={cn(
+              'h-11 w-11 rounded-xl shrink-0 flex items-center justify-center transition-colors',
+              !inputValue.trim() || loading
+                ? 'bg-primary/50 text-primary-foreground/60 cursor-not-allowed'
+                : 'bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer'
+            )}
           >
             <FiSend className="h-4 w-4" />
-          </Button>
-        </div>
+          </button>
+        </form>
       </div>
     </div>
   )
