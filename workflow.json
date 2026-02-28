@@ -1,0 +1,32 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "Employee Question",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "knowledge_qa_agent",
+      "type": "Agent",
+      "label": "Knowledge Q&A Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Answer with Sources",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "knowledge_qa_agent"
+    },
+    {
+      "source": "knowledge_qa_agent",
+      "target": "output_node"
+    }
+  ]
+}

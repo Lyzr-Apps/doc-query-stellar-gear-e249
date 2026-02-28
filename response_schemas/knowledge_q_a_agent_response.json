@@ -1,0 +1,34 @@
+{
+  "agent_name": "Knowledge Q&A Agent",
+  "agent_id": "69a27bd2e558069e826f0417",
+  "description": "Answers employee questions by searching the company knowledge base. Returns accurate answers with source references. When conflicting information exists, presents all relevant sources with context so the user can decide.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "answer": "string",
+    "sources": [
+      {
+        "document_name": "string",
+        "section": "string",
+        "excerpt": "string",
+        "relevance": "string"
+      }
+    ],
+    "has_conflicts": "boolean",
+    "conflict_summary": "string"
+  },
+  "example_response": {
+    "answer": "The main answer to the employee question",
+    "sources": [
+      {
+        "document_name": "Name of the source document",
+        "section": "Section or page reference",
+        "excerpt": "Relevant excerpt from the source",
+        "relevance": "How this source relates to the question"
+      }
+    ],
+    "has_conflicts": false,
+    "conflict_summary": "Summary of conflicting information if any, empty string if none"
+  }
+}
