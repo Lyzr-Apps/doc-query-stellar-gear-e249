@@ -1,0 +1,314 @@
+ACME CORPORATION - ENGINEERING DEPARTMENT GUIDE
+=================================================
+Version 2.1 | Last Updated: January 28, 2025
+
+---
+
+SECTION 1: ENGINEERING TEAM STRUCTURE
+
+1.1 Organization
+The Engineering department is organized into the following teams:
+
+Platform Engineering
+- Responsible for core infrastructure, CI/CD, and developer tooling
+- Team Lead: Sarah Chen
+- Team Size: 12 engineers
+
+Product Engineering - Frontend
+- Responsible for web and mobile user interfaces
+- Team Lead: Marcus Johnson
+- Team Size: 18 engineers
+
+Product Engineering - Backend
+- Responsible for APIs, microservices, and data pipelines
+- Team Lead: Priya Patel
+- Team Size: 15 engineers
+
+Data Engineering
+- Responsible for data warehousing, analytics pipelines, and ML infrastructure
+- Team Lead: David Kim
+- Team Size: 8 engineers
+
+Security Engineering
+- Responsible for application security, penetration testing, and security tooling
+- Team Lead: Alex Rivera
+- Team Size: 6 engineers
+
+QA Engineering
+- Responsible for test automation, quality assurance, and release management
+- Team Lead: Emma Thompson
+- Team Size: 10 engineers
+
+1.2 Reporting Structure
+All team leads report to the VP of Engineering, James Morrison.
+The VP of Engineering reports to the CTO, Dr. Lisa Wang.
+
+---
+
+SECTION 2: DEVELOPMENT PRACTICES
+
+2.1 Tech Stack
+Primary Technologies:
+- Frontend: React, TypeScript, Next.js, Tailwind CSS
+- Backend: Node.js, Python, Go
+- Databases: PostgreSQL, Redis, MongoDB, Elasticsearch
+- Cloud: AWS (primary), GCP (ML workloads)
+- Infrastructure: Kubernetes, Terraform, Docker
+- Monitoring: Datadog, PagerDuty, Sentry
+
+2.2 Git Workflow
+We follow a trunk-based development model:
+- Main branch: `main` (always deployable)
+- Feature branches: `feature/JIRA-123-short-description`
+- Bug fixes: `fix/JIRA-456-short-description`
+- Hotfixes: `hotfix/JIRA-789-short-description`
+
+Branch Rules:
+- All changes require a pull request
+- PRs require at least 2 approving reviews
+- CI must pass before merging
+- Squash merge is the default merge strategy
+- Branches are deleted after merge
+
+2.3 Code Review Standards
+Every PR must be reviewed with attention to:
+- Correctness: Does it solve the problem?
+- Security: Are there any vulnerabilities?
+- Performance: Are there any performance concerns?
+- Readability: Is the code clean and well-documented?
+- Testing: Are there adequate tests?
+- Design: Does it follow our architecture patterns?
+
+Review SLAs:
+- Critical/Hotfix PRs: Review within 2 hours
+- Standard PRs: Review within 1 business day
+- Large PRs (>500 lines): Review within 2 business days
+
+2.4 Testing Requirements
+- Unit test coverage minimum: 80%
+- Integration tests required for all API endpoints
+- E2E tests required for critical user flows
+- Performance tests required for any database query changes
+- Security tests required for authentication/authorization changes
+
+Testing Tools:
+- Unit Tests: Jest (JS/TS), pytest (Python), go test (Go)
+- Integration Tests: Supertest, pytest-asyncio
+- E2E Tests: Playwright
+- Performance: k6, Artillery
+- Security: Snyk, OWASP ZAP
+
+---
+
+SECTION 3: DEPLOYMENT AND RELEASE
+
+3.1 Deployment Pipeline
+1. Developer pushes to feature branch
+2. CI runs: lint, type-check, unit tests, integration tests
+3. PR reviewed and approved
+4. Merged to main
+5. CI runs full test suite on main
+6. Automatic deployment to staging
+7. Smoke tests run on staging
+8. Manual approval for production deployment
+9. Canary deployment (10% traffic for 30 minutes)
+10. Full rollout if metrics are healthy
+
+3.2 Release Schedule
+- Regular releases: Every Tuesday and Thursday at 10:00 AM PT
+- Hotfix releases: As needed, any time
+- Feature flag releases: Can be toggled independently of deployments
+- Freeze periods: No deployments during major holidays or company events
+
+3.3 Rollback Procedures
+If a deployment causes issues:
+1. Trigger rollback via PagerDuty or deployment dashboard
+2. Rollback completes within 5 minutes
+3. Post-rollback: Create incident ticket in Jira
+4. Root cause analysis required within 24 hours
+5. Post-mortem document due within 48 hours
+
+3.4 Feature Flags
+We use LaunchDarkly for feature flag management:
+- All new features must be behind a feature flag
+- Flags should have clear naming: `enable-feature-name`
+- Remove flags within 30 days of full rollout
+- Flag ownership must be assigned in LaunchDarkly
+
+---
+
+SECTION 4: ON-CALL AND INCIDENT MANAGEMENT
+
+4.1 On-Call Rotation
+- Each team maintains a weekly on-call rotation
+- On-call engineer must respond to pages within 15 minutes
+- Secondary on-call serves as backup
+- On-call shifts: Monday 9 AM to following Monday 9 AM PT
+- On-call compensation: $500/week flat rate + $100/incident outside business hours
+
+4.2 Incident Severity Levels
+
+SEV-1 (Critical):
+- Complete service outage or data breach
+- Response time: 15 minutes
+- All hands until resolved
+- Executive notification required
+- Example: Main API completely down, customer data exposed
+
+SEV-2 (High):
+- Major feature degradation affecting >10% of users
+- Response time: 30 minutes
+- On-call team + relevant experts
+- Example: Search functionality broken, payment processing slow
+
+SEV-3 (Medium):
+- Minor feature degradation affecting <10% of users
+- Response time: 2 hours
+- On-call engineer investigates
+- Example: Report generation delayed, non-critical API errors
+
+SEV-4 (Low):
+- Cosmetic issues or minor bugs
+- Response time: Next business day
+- Tracked in Jira, fixed in normal sprint cycle
+- Example: UI alignment issue, non-impactful log errors
+
+4.3 Post-Mortem Process
+After any SEV-1 or SEV-2 incident:
+1. Incident lead writes post-mortem within 48 hours
+2. Document includes: timeline, root cause, impact, resolution, action items
+3. Post-mortem reviewed in weekly engineering all-hands
+4. Action items tracked in Jira with owners and deadlines
+5. No blame culture - focus on systemic improvements
+
+---
+
+SECTION 5: ENGINEERING BENEFITS AND PERKS
+
+5.1 Professional Development
+- Annual learning budget: $3,000 per engineer (exceeds company standard of $2,000)
+- Conference attendance: Up to 2 conferences per year
+- Internal tech talks: Every Friday 3-4 PM
+- Book club: Monthly engineering book club with provided copies
+- Certification reimbursement: 100% for relevant certifications
+
+5.2 Equipment
+Standard engineer setup includes:
+- MacBook Pro 16" (M3 Pro, 36GB RAM, 1TB SSD) or equivalent Linux laptop
+- 2x 32" 4K monitors
+- Mechanical keyboard (choice of brand, up to $200)
+- Ergonomic chair (Herman Miller Aeron or equivalent)
+- Standing desk
+- Noise-cancelling headphones (up to $400)
+
+Hardware refresh cycle: Every 3 years or upon approval for role changes.
+
+5.3 PTO Carryover (Engineering-Specific)
+Engineering team members may carry over up to 10 unused PTO days into the following year, exceeding the company standard of 5 days. This was approved by the VP of Engineering to account for on-call commitments and release freeze periods.
+
+5.4 Flexible Hours
+Engineers have flexible working hours with no fixed core hours requirement (overriding the company standard of 10 AM - 3 PM core hours). The only requirement is:
+- Attend your team's daily standup
+- Be available for scheduled meetings
+- Meet sprint commitments
+- Respond to on-call pages within SLA
+
+---
+
+SECTION 6: ARCHITECTURE STANDARDS
+
+6.1 Microservices Guidelines
+- Each service should have a single responsibility
+- Services communicate via REST APIs or gRPC
+- Event-driven communication via Kafka for async workflows
+- Each service owns its data and database
+- Service mesh (Istio) handles inter-service communication
+
+6.2 API Standards
+- RESTful APIs follow OpenAPI 3.0 specification
+- All APIs must be versioned: `/api/v1/resource`
+- Pagination required for list endpoints (cursor-based preferred)
+- Rate limiting on all public endpoints
+- Request/response logging for debugging
+- Error responses follow RFC 7807 (Problem Details)
+
+6.3 Database Guidelines
+- PostgreSQL for relational data (default choice)
+- Redis for caching and session storage
+- MongoDB for document storage (content, logs)
+- Elasticsearch for search functionality
+- All databases must have automated backups
+- Schema migrations managed via versioned migration files
+- No raw SQL in application code - use ORM/query builders
+
+6.4 Security Standards
+- All endpoints require authentication (except health checks)
+- Use JWT tokens with 1-hour expiration
+- Sensitive data encrypted at rest (AES-256)
+- All external communications over TLS 1.3
+- Input validation on all user inputs
+- SQL injection prevention via parameterized queries
+- XSS prevention via output encoding
+- CSRF protection on all state-changing endpoints
+
+---
+
+SECTION 7: DOCUMENTATION
+
+7.1 Documentation Requirements
+All engineers must maintain:
+- README.md in every repository
+- API documentation (auto-generated from OpenAPI specs)
+- Architecture Decision Records (ADRs) for significant decisions
+- Runbooks for operational procedures
+- Onboarding guides for each team
+
+7.2 Documentation Tools
+- Confluence: Long-form documentation, ADRs, runbooks
+- GitHub Wiki: Repository-specific docs
+- Swagger/OpenAPI: API documentation
+- Notion: Meeting notes and project planning
+- Loom: Video walkthroughs for complex features
+
+---
+
+SECTION 8: SPRINT AND PROJECT MANAGEMENT
+
+8.1 Sprint Cadence
+- Sprint length: 2 weeks
+- Sprint planning: Monday 10 AM PT (first day of sprint)
+- Daily standup: 9:30 AM PT (15 minutes max)
+- Sprint review/demo: Friday 2 PM PT (last day of sprint)
+- Retrospective: Friday 3 PM PT (last day of sprint)
+
+8.2 Estimation
+We use story points with Fibonacci scale (1, 2, 3, 5, 8, 13):
+- 1 point: Trivial change, <1 hour
+- 2 points: Small change, half day
+- 3 points: Medium change, 1-2 days
+- 5 points: Large change, 3-4 days
+- 8 points: Very large, full sprint
+- 13 points: Should be broken down into smaller stories
+
+8.3 Definition of Done
+A story is "done" when:
+- Code is written and peer-reviewed
+- Unit and integration tests pass
+- Documentation is updated
+- Feature flag is configured
+- Deployed to staging and verified
+- Product owner has accepted the work
+
+---
+
+Contact Information:
+VP of Engineering: james.morrison@acme.com
+Engineering Operations: eng-ops@acme.com
+Platform Team: platform-team@acme.com
+
+Engineering Slack Channels:
+#engineering-general
+#engineering-help
+#incident-response
+#tech-talks
+#code-review-requests

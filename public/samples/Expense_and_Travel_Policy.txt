@@ -1,0 +1,242 @@
+ACME CORPORATION - EXPENSE AND TRAVEL POLICY
+===============================================
+Finance Department
+Version 4.0 | Effective: January 1, 2025
+
+---
+
+SECTION 1: PURPOSE
+
+This policy establishes guidelines for business-related expenses and travel for all ACME Corporation employees. It ensures expenses are reasonable, properly documented, and compliant with tax regulations.
+
+---
+
+SECTION 2: EXPENSE GUIDELINES
+
+2.1 General Principles
+- All expenses must have a legitimate business purpose
+- Expenses should be reasonable and cost-effective
+- Original receipts are required for all expenses over $25
+- Expense reports must be submitted within 30 days of incurring the expense
+- Late submissions (>60 days) will not be reimbursed without VP approval
+
+2.2 Approval Thresholds
+- Up to $500: Manager approval
+- $501 - $2,500: Director approval
+- $2,501 - $10,000: VP approval
+- Over $10,000: CFO approval
+
+2.3 Corporate Credit Card
+- Issued to employees at Level 3 (Senior) and above
+- Monthly credit limit: $5,000 (higher limits by request)
+- Personal charges on corporate cards are strictly prohibited
+- Card must be reconciled monthly in the expense system
+
+---
+
+SECTION 3: TRAVEL POLICY
+
+3.1 Booking Procedures
+- All travel must be booked through the company travel portal (Navan/TripActions)
+- Book at least 14 days in advance when possible (lower fares)
+- Same-day or next-day travel requires Director approval
+- International travel requires VP approval
+
+3.2 Air Travel
+Domestic Flights:
+- Economy class for flights under 4 hours
+- Premium economy for flights over 4 hours
+- Book lowest logical fare (within 2 hours of preferred time)
+
+International Flights:
+- Economy class for flights under 6 hours
+- Premium economy for flights 6-10 hours
+- Business class for flights over 10 hours (VP and above: all international flights)
+
+General Rules:
+- Book refundable fares only when itinerary is uncertain
+- Frequent flyer miles earned on business travel belong to the employee
+- Seat upgrades using personal miles/points are permitted
+- Baggage fees for first checked bag are reimbursable
+
+3.3 Hotels
+- Use preferred hotel partners when available (Marriott, Hilton, Hyatt)
+- Nightly rate limits (excluding taxes):
+  - Tier 1 cities (SF, NYC, LA, Chicago, Boston, DC): $275/night
+  - Tier 2 cities (all other US cities): $200/night
+  - International: Varies by location (see travel portal for limits)
+- Room service is limited to $30/day when no restaurant is reasonably available
+- Minibar charges are not reimbursable
+- Laundry is reimbursable for trips exceeding 4 nights
+
+3.4 Ground Transportation
+- Ride-sharing (Uber/Lyft) preferred over taxis when available
+- UberX/Lyft standard class for individual travel
+- UberXL/Lyft XL when traveling with 3+ colleagues
+- Rental cars: Compact or mid-size; full-size for 3+ travelers
+  - Always purchase collision damage waiver (CDW)
+  - Refuel before returning (fuel surcharges are not reimbursable)
+- Personal vehicle mileage: Reimbursed at IRS standard rate ($0.67/mile for 2025)
+- Parking and tolls are reimbursable with receipts
+
+3.5 Meals During Travel
+Per diem meal allowances (including tip):
+- Breakfast: $20
+- Lunch: $30
+- Dinner: $50
+- Total daily cap: $100
+
+Alternatively, employees may submit actual receipts up to the daily cap. Alcohol is limited to $25 per day during business travel.
+
+---
+
+SECTION 4: CLIENT ENTERTAINMENT
+
+4.1 Client Meals
+- Reasonable restaurant expenses for client meetings
+- Per-person limit: $100 for dinner, $50 for lunch, $30 for breakfast
+- Must document: client name(s), company, business purpose
+- Alcohol is permitted but should be moderate
+
+4.2 Client Events
+- Sporting events, concerts, etc.: Up to $250/person with Director approval
+- Must have clear business purpose documented
+- ACME employee must attend the event with the client
+
+4.3 Gifts
+- Business gifts to clients/partners: Up to $100 per person per year
+- Must comply with the recipient's company gift policy
+- No cash or cash-equivalent gifts
+- Document recipient name, company, and business purpose
+
+---
+
+SECTION 5: WORK-FROM-HOME EXPENSES
+
+5.1 Home Office Stipend
+- $500 annual stipend for home office setup (furniture, equipment)
+- Paid as a lump sum in January each year
+- New hires receive prorated amount based on start date
+
+5.2 Internet Reimbursement
+- Up to $75/month for home internet (remote workers only)
+- Must work remotely at least 3 days/week to qualify
+- Submit monthly internet bill for reimbursement
+
+5.3 Office Supplies
+- Reasonable office supplies (pens, notebooks, printer paper) are reimbursable
+- Orders over $50 should go through the office supply portal
+
+---
+
+SECTION 6: PROFESSIONAL DEVELOPMENT
+
+6.1 Training and Courses
+- Up to $2,000/year for professional development (company standard)
+- Engineering department: Up to $3,000/year (department-specific allocation)
+- Online courses, certifications, workshops, and seminars qualify
+- Must be relevant to current role or career growth at ACME
+
+6.2 Conference Attendance
+- Registration fees: Reimbursable with manager approval
+- Travel expenses: Follow standard travel policy
+- Maximum 2 conferences per year per employee
+- Post-conference: Share learnings with team (presentation or summary)
+
+6.3 Books and Subscriptions
+- Technical books and professional subscriptions: Reimbursable up to $500/year
+- Request through the learning portal or submit receipts
+
+---
+
+SECTION 7: NON-REIMBURSABLE EXPENSES
+
+The following expenses are NOT reimbursable:
+- Personal entertainment
+- Traffic violations, parking tickets, or moving violations
+- Personal phone bills (unless pre-approved BYOD stipend)
+- Pet care or pet travel
+- Personal grooming (haircuts, clothing unless company-branded)
+- Gym memberships (covered separately under benefits)
+- First-class air travel (unless pre-approved for medical reasons)
+- Spouse/partner travel expenses
+- Lost or stolen personal property
+- Minibar charges
+- In-room movies
+- Childcare during travel (except for emergency situations with VP approval)
+
+---
+
+SECTION 8: EXPENSE REPORTING
+
+8.1 How to Submit
+1. Log into the expense management system (Expensify)
+2. Create a new report or add to existing monthly report
+3. Upload receipt photos (mobile app recommended)
+4. Categorize each expense appropriately
+5. Add business purpose description
+6. Submit for approval
+
+8.2 Required Documentation
+Each expense must include:
+- Date of expense
+- Amount and currency
+- Vendor/merchant name
+- Business purpose (1-2 sentences)
+- Receipt (photo or scan for expenses over $25)
+- Client name (if applicable)
+
+8.3 Reimbursement Timeline
+- Approved domestic expenses: Reimbursed within 5 business days
+- Approved international expenses: Reimbursed within 10 business days
+- Reimbursements deposited via direct deposit
+
+8.4 Currency Conversion
+- International expenses converted at the exchange rate on the date of purchase
+- Use the rate shown on your credit card statement
+- The company does not reimburse for unfavorable exchange rate differences
+
+---
+
+SECTION 9: COMPLIANCE
+
+9.1 Audit
+- Expense reports are subject to random audits by the Finance team
+- Managers must review and approve all direct reports' expenses
+- Flagged expenses require additional documentation within 5 business days
+
+9.2 Violations
+Violations of this policy may result in:
+- Denial of reimbursement
+- Requirement to repay improperly claimed expenses
+- Revocation of corporate credit card
+- Disciplinary action up to and including termination
+- For repeated or intentional violations: potential legal action
+
+9.3 Exceptions
+Exceptions to any provision of this policy require written approval from the CFO. Exception requests should be submitted through the Finance portal with business justification.
+
+---
+
+SECTION 10: SUSTAINABILITY
+
+10.1 Green Travel Initiatives
+ACME encourages environmentally conscious travel:
+- Choose video conferencing when possible over in-person meetings
+- Use public transportation when practical
+- Choose direct flights (lower carbon footprint)
+- Stay at hotels with sustainability certifications
+- Opt for electric/hybrid rental vehicles when available
+
+10.2 Carbon Offset
+ACME automatically purchases carbon offsets for all business air travel. This cost is borne by the company and does not count against departmental travel budgets.
+
+---
+
+Contact:
+Finance Department: finance@acme.com
+Travel Support: travel@acme.com
+Expense Questions: expenses@acme.com
+Expensify Help: expensify-help@acme.com
+
+Emergency Travel Assistance (24/7): +1-800-555-TRIP (8747)

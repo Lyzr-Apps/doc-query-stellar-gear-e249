@@ -1,0 +1,290 @@
+ACME CORPORATION - PRODUCT OVERVIEW 2025
+==========================================
+Product Management Department
+Last Updated: February 15, 2025
+
+---
+
+SECTION 1: PRODUCT PORTFOLIO
+
+1.1 ACME Platform
+Our flagship enterprise platform that powers digital transformation for mid-market and enterprise customers.
+
+Core Modules:
+- ACME Connect: Customer relationship management
+- ACME Flow: Workflow automation and business process management
+- ACME Analytics: Business intelligence and reporting
+- ACME Secure: Identity and access management
+- ACME Integrate: API gateway and integration hub
+
+1.2 Product Tiers
+
+Starter Plan ($499/month):
+- Up to 25 users
+- ACME Connect (basic CRM)
+- ACME Flow (5 workflows)
+- Email support
+- 99.5% uptime SLA
+- 10 GB storage
+
+Professional Plan ($1,499/month):
+- Up to 100 users
+- All Starter features plus:
+- ACME Analytics (standard reports)
+- ACME Integrate (10 integrations)
+- Priority email and chat support
+- 99.9% uptime SLA
+- 100 GB storage
+- Custom branding
+
+Enterprise Plan ($4,999/month):
+- Unlimited users
+- All Professional features plus:
+- ACME Secure (SSO, RBAC, audit logs)
+- ACME Analytics (custom dashboards, ML insights)
+- ACME Integrate (unlimited integrations)
+- 24/7 phone support with dedicated CSM
+- 99.99% uptime SLA
+- Unlimited storage
+- On-premise deployment option
+- Custom SLA agreements
+
+---
+
+SECTION 2: ACME CONNECT (CRM)
+
+2.1 Overview
+ACME Connect is our customer relationship management module that helps teams manage contacts, deals, and customer interactions.
+
+2.2 Key Features
+- Contact Management: Centralized database of customers, leads, and partners
+- Deal Pipeline: Visual pipeline with customizable stages
+- Activity Tracking: Automatic logging of emails, calls, and meetings
+- Email Integration: Native integration with Gmail and Outlook
+- Task Management: Create and assign tasks linked to contacts or deals
+- Custom Fields: Add unlimited custom fields to any object
+- Import/Export: Bulk import from CSV, export to CSV/Excel
+- Mobile App: iOS and Android apps for field sales
+
+2.3 Recent Updates (Q1 2025)
+- AI-powered lead scoring (uses historical conversion data)
+- Duplicate contact detection and merge
+- LinkedIn integration for contact enrichment
+- Custom pipeline views with filtering
+- Bulk email sending (up to 500/day on Professional, unlimited on Enterprise)
+
+---
+
+SECTION 3: ACME FLOW (WORKFLOW AUTOMATION)
+
+3.1 Overview
+ACME Flow enables businesses to automate repetitive processes with a visual drag-and-drop workflow builder.
+
+3.2 Key Features
+- Visual Workflow Builder: No-code interface for creating automation
+- Trigger Types: Time-based, event-based, webhook, manual
+- Action Library: 50+ pre-built actions (send email, create task, update record, API call)
+- Conditional Logic: If/else branching, loops, parallel execution
+- Approval Workflows: Multi-level approval chains with escalation
+- Template Library: 100+ pre-built workflow templates
+- Version History: Track changes and roll back workflows
+- Analytics: Monitor workflow execution metrics and bottlenecks
+
+3.3 Workflow Limits by Plan
+- Starter: 5 active workflows, 1,000 executions/month
+- Professional: 50 active workflows, 25,000 executions/month
+- Enterprise: Unlimited workflows, unlimited executions
+
+3.4 Integration with Other Modules
+ACME Flow integrates natively with all ACME modules:
+- Trigger workflows from ACME Connect events (new deal, stage change)
+- Update ACME Analytics dashboards from workflow data
+- Create ACME Secure access requests via workflow
+- Route API calls through ACME Integrate
+
+---
+
+SECTION 4: ACME ANALYTICS
+
+4.1 Overview
+ACME Analytics provides business intelligence, reporting, and data visualization tools.
+
+4.2 Key Features
+- Dashboard Builder: Drag-and-drop dashboard creation
+- Report Types: Tables, charts, pivot tables, KPI cards
+- Data Sources: Native connection to all ACME modules + external databases
+- Scheduled Reports: Automatic report generation and email delivery
+- Custom Metrics: Define calculated fields and custom aggregations
+- Drill-Down: Click any data point to explore underlying data
+- Sharing: Share dashboards with team members or embed externally
+- Export: PDF, Excel, CSV, PNG formats
+
+4.3 ML Insights (Enterprise Only)
+- Anomaly Detection: Automatic flagging of unusual patterns
+- Forecasting: Time-series forecasting for revenue, usage, and growth
+- Segmentation: AI-powered customer segmentation
+- Churn Prediction: Identify at-risk customers before they leave
+
+---
+
+SECTION 5: ACME SECURE
+
+5.1 Overview
+ACME Secure provides identity and access management for the ACME Platform.
+
+5.2 Key Features
+- Single Sign-On (SSO): SAML 2.0 and OIDC support
+- Role-Based Access Control (RBAC): Fine-grained permission management
+- Multi-Factor Authentication: TOTP, SMS, hardware keys (FIDO2)
+- Audit Logs: Complete activity logging with search and export
+- IP Allowlisting: Restrict access by IP address or range
+- Session Management: Configure session timeout and concurrent session limits
+- API Key Management: Create, rotate, and revoke API keys
+- Compliance Reports: SOC 2, GDPR, HIPAA compliance reporting
+
+5.3 Availability
+ACME Secure is available on the Enterprise plan only. Starter and Professional plans include basic authentication (email/password + optional MFA).
+
+---
+
+SECTION 6: ACME INTEGRATE
+
+6.1 Overview
+ACME Integrate is our API gateway and integration platform that connects ACME with third-party services.
+
+6.2 Pre-Built Integrations
+Category: Communication
+- Slack, Microsoft Teams, Zoom, Twilio
+
+Category: Productivity
+- Google Workspace, Microsoft 365, Notion, Asana
+
+Category: Marketing
+- HubSpot, Mailchimp, Marketo, Google Analytics
+
+Category: Finance
+- Stripe, QuickBooks, Xero, NetSuite
+
+Category: Development
+- GitHub, GitLab, Jira, Confluence
+
+Category: Cloud Storage
+- AWS S3, Google Drive, Dropbox, Box
+
+6.3 Custom Integrations
+- REST API: Full REST API with OpenAPI documentation
+- Webhooks: Send real-time event notifications to any URL
+- GraphQL: GraphQL API available for Enterprise customers
+- SDK: JavaScript, Python, Ruby, and Go SDKs available
+
+6.4 API Rate Limits
+- Starter: 100 requests/minute
+- Professional: 1,000 requests/minute
+- Enterprise: 10,000 requests/minute (custom limits available)
+
+---
+
+SECTION 7: PRODUCT ROADMAP Q1-Q2 2025
+
+7.1 Q1 2025 (January - March) - CURRENT
+- [SHIPPED] AI lead scoring in ACME Connect
+- [SHIPPED] LinkedIn integration
+- [IN PROGRESS] ACME Flow v2 - enhanced visual builder
+- [IN PROGRESS] Mobile app redesign (iOS/Android)
+- [PLANNED] ACME Analytics - natural language queries
+
+7.2 Q2 2025 (April - June)
+- ACME Connect - AI email assistant (draft suggestions, follow-up reminders)
+- ACME Flow - AI workflow suggestions based on usage patterns
+- ACME Integrate - 15 new pre-built integrations
+- ACME Secure - Passwordless authentication (passkeys)
+- Platform - Performance improvements (30% faster page loads)
+- Mobile - Offline mode for field sales
+
+---
+
+SECTION 8: COMPETITIVE POSITIONING
+
+8.1 Key Differentiators
+1. All-in-One Platform: Unlike competitors who require multiple tools, ACME provides CRM, automation, analytics, security, and integrations in one platform.
+2. AI-Native: Machine learning is built into every module, not bolted on.
+3. Developer-Friendly: Extensive APIs, SDKs, and documentation.
+4. Enterprise-Grade Security: SOC 2 Type II, ISO 27001, GDPR compliant.
+5. Flexible Deployment: Cloud, on-premise, or hybrid options.
+
+8.2 Competitor Comparison
+
+vs. Salesforce:
+- ACME is 40-60% less expensive for comparable functionality
+- Simpler setup (days vs. months)
+- Built-in workflow automation (Salesforce requires separate Flow license)
+
+vs. HubSpot:
+- ACME offers superior analytics and BI capabilities
+- Enterprise-grade security features
+- On-premise deployment option
+- More powerful workflow automation
+
+vs. Zoho:
+- ACME has stronger API and integration capabilities
+- Better ML/AI features
+- More robust security and compliance
+- Superior customer support
+
+---
+
+SECTION 9: CUSTOMER SUCCESS
+
+9.1 Onboarding Process
+1. Kickoff call with Customer Success Manager (within 48 hours of signing)
+2. Technical setup and configuration (Week 1)
+3. Data migration assistance (Week 2-3)
+4. Admin training (Week 3)
+5. End-user training (Week 4)
+6. Go-live support (Week 5)
+7. 30-day check-in
+8. 90-day business review
+
+9.2 Support Channels
+- Starter: Email support (24-hour response time)
+- Professional: Email + Chat (4-hour response time)
+- Enterprise: Email + Chat + Phone (1-hour response time) + Dedicated CSM
+
+9.3 Support Hours
+- Email: 24/7
+- Chat: Monday-Friday, 6 AM - 8 PM PT
+- Phone: Monday-Friday, 8 AM - 6 PM PT (Enterprise: 24/7)
+
+---
+
+SECTION 10: PRICING AND LICENSING
+
+10.1 Billing
+- Monthly billing available for all plans
+- Annual billing discount: 20% off monthly price
+- Enterprise custom pricing available for 500+ users
+
+10.2 Add-Ons
+- Additional storage: $10/100 GB/month
+- API rate limit increase: $200/month per 1,000 additional requests/minute
+- Premium support upgrade: $500/month
+- Custom training sessions: $2,000 per session
+- Data migration services: Starting at $5,000
+
+10.3 Free Trial
+- 14-day free trial of Professional plan
+- No credit card required
+- Full feature access during trial
+- Data preserved if converting to paid plan
+
+---
+
+Contact:
+Product Management: product@acme.com
+Sales: sales@acme.com
+Customer Success: success@acme.com
+Technical Support: support@acme.com
+
+Website: www.acme-platform.com
+Documentation: docs.acme-platform.com
+Status Page: status.acme-platform.com
